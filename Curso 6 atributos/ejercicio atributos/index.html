@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ejercicio contenido embebido</title>
-        <link rel="icon" href="" />
-    </head>
-    <body></body>
+<html lang="es" dir="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio contenido embebido</title>
+    <link rel="icon" href="img/Github img.png" />
+    <style>
+      li[data-user="user"] {
+        color: cadetblue;
+      }
+      li[data-user="admin"] {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/Github img.png" alt="" />
+      <!-- role, también sirve con nav, siempre va con 
+    role="  -   "-->
+      <nav role="navegación-principal">
+        <!--a cada li, se le puede poner un role, una class
+        o un id -->
+        <span>
+          <li>menu 1</li>
+          <li>menu 2</li>
+          <li>menu 3</li>
+        </span>
+      </nav>
+    </header>
+    <!-- atributo role, sirve para personas invidentes usen el navegador -->
+    <main role="contenido-principal">
+      <h1>Ejercicio de atributos</h1>
+      <p>
+        estos atributos sirven para distinguir lenguaje del html, escritura de
+        izq a dr o de dr a izq
+      </p>
+      <!-- class se utiliza principalmente para css -->
+      <!-- el id es un identificador sirve para css y js -->
+      <!-- id son identificadores unicos y no se pueden repetir -->
+      <p class="parrafo" id="primer-parrafo">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non doloremque
+        mollitia sunt.
+      </p>
+      <hr />
+      <!-- atributos personalizados -->
+      <!-- siempre se debe hacer una lista -->
+      <ul>
+        <li data-user="user">empleado</li>
+        <li data-user="user">empleado</li>
+        <li data-user="admin">administrador</li>
+        <li data-user="user">empleado</li>
+        <li data-user="user">empleado</li>
+      </ul>
+
+      <hr />
+      <article>
+        <h2>mostrar que es música</h2>
+        <section>
+          <h3><strong>linkinpark</strong></h3>
+          <p>concierto live texas</p>
+          <audio src="audio/Linkin Park.mp3" controls muted></audio>
+          <pre>
+                  <p>si no les gusta coman _______ <br>
+                porque es lo que hay</p>
+              </pre>
+          <hr />
+          <p>
+            github es un repositorio <cite> Diego </cite> muchas personas
+            confunden github con git <q> esto no es asi</q>
+          </p>
+        </section>
+      </article>
+      <article>
+        <section>
+          <h4>las historias</h4>
+          <p>en la siguiente lista en orden, se mostraran los hechos</p>
+          <ol>
+            <li>W</li>
+            <li>L</li>
+            <li>Da</li>
+          </ol>
+          <hr />
+          <p>formulas</p>
+          <!-- <sub> subindice -->
+          <p>la formula de H2O se escribe asi H<sub>2</sub>O</p>
+          <hr />
+          <!-- <sup> superindice -->
+          <p>escribir como en algebra Z<sup>x</sup></p>
+          <p>música con la que trabajaba w</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/UKhimFahCp0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <hr />
+          <p>lista de definiciones</p>
+          <dl>
+            <dt>html</dt>
+            <dd>lenguaje de marcado de hipertexto</dd>
+            <dt>css</dt>
+            <dd>hojas de estilo cascada</dd>
+            <dt>js</dt>
+            <dd>servidor</dd>
+          </dl>
+          <p>lista en reversa</p>
+          <ol reversed>
+            <li>W</li>
+            <li>L</li>
+            <li>Da</li>
+          </ol>
+          <p>lista star</p>
+          <ol start="6">
+            <li>W</li>
+            <li>L</li>
+            <li>DA</li>
+          </ol>
+          <p>lista type</p>
+          <ol type="Q">
+            <li>W</li>
+            <li>L</li>
+            <li>Da</li>
+          </ol>
+          <p>lista desordenada</p>
+          <ul>
+            <li>W</li>
+            <li>l</li>
+            <li>Da</li>
+          </ul>
+          <hr />
+          <p>
+            Lorem ipsum dolor<wbr /> sit amet consectetur adipisicing elit.
+            Soluta excepturi velit accusantium.
+          </p>
+          <hr />
+          <aside>
+            <nav>
+              <p>
+                acontinuación se mostrara el mapa de la zona de trabajo de w
+              </p>
+            </nav>
+          </aside>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <address>
+        <p><small>excento de resposabilidad</small></p>
+        <p>celular +3849494</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.094747929706!2d-75.57177868607396!3d6.251245328004756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fededc611b%3A0xb5472c3ff44277c7!2sParroquia%20de%20la%20Veracruz!5e0!3m2!1sen!2sco!4v1599667301946!5m2!1sen!2sco"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </address>
+    </footer>
+  </body>
 </html>

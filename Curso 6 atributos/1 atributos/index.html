@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- atributos de internacionalización -->
+<!-- lang ="en" dir="auto detecta automaticamente el idioma" -->
+<!-- rlt significa escritura de derecha a izquierda -->
+<!-- ltr significa escritura de izquierda a derech, occidentales -->
+<html lang="es" dir="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atributos</title>
   <link rel="icon" href="img/Github img.png">
+  <!-- acá se agrega el css -->
+  <!-- style va antes del <head> -->
   <style>
+    /* ejemplo se usa la lista que se creo con el data-user, li */
+   li[ data-user="user"]{
+     color: blueviolet;
+   }
+   li[ data-user="admin"]{
+     color: brown;
+   }
 
   </style>
 </head>
 <body>
   <header>
-    <!-- img src="img/Github img.png" -->
-    <!-- <nav> <span> menu 1 </span></nav> -->
+    <!-- img/ src=".png " alt="" -->
+    <!-- role, también sirve con nav, siempre va con 
+    role="  -   "-->
+    <!-- dentro de cada li, se puede poner role,class o un id --
+      <nav role="navegación-principal"->
+     <ul>
+       <li role=""> menu 1 </li>
+       <li class=""> menu 2 </li>
+       <li id=""> men 3 </li>
+     </ul>
     </nav>
-
-  </header>
-  <main contenido principal>
+ </header>
+  <!-- role, es un atributo que le ayuda al navegador, para cuando una persona invidente lo este utilizando  -->
+  <!-- role, también sirve con nav, siempre va con 
+    role="  -   "  ->
+    <main role="contenido-principal">
+  
     <!-- <etiqueta atributo ="valor" -->
 
       <!-- <etiqueta atributo1 ="valor1" atributo2="valor2" -->
@@ -29,6 +53,8 @@
           html lang "es"o "en ingles" dir="auto"
         rlt, ltr, de izq a derecha o derecha a izq
         </p>
+        <hr>
+        <p>atributos de eventos solo se usan en js</p>
         <!-- atributos de eventos sólo se utilizan en las páginas web dinámicas creadas con js -->
 
         <!-- atributos de foco: relacionados principalmente con la aacesibilidad de los sitios web -->
@@ -36,8 +62,10 @@
 
         <!-- atributos personalizados: son atributos que creamos nosotros. deben emepezar por data- -->
         <p>ejemplo <data-user="user">empleado</data-user></p>
-
   </main>
+  <!--  <!-- atributos de foco, se usan más en formularios --> -->
+  <!-- ojo este atributo no me ha servido, volver a intentar -->
+  <imput type="text"></imput>
   
 </body>
 </html>
