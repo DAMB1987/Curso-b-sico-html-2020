@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio de enlaces y rutas</title>
     <link
       rel="icon"
-      href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github img.png"
+      href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
     />
     <style>
-      li[data-user="rockero"] {
-        color: crimson;
+      ol [data-user="nuevo"] {
+        color: hotpink;
       }
-      li[data-user="reggaetonero"] {
-        color: darkmagenta;
+      ol [data-user="viejo"] {
+        color: indigo;
       }
     </style>
   </head>
   <body>
     <header>
-      <img
-        src="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
-      />
+      <img src="../img/git.png" />
       <nav role="menu-principal">
         <a href="/">inicio</a>
         <a
@@ -36,66 +34,85 @@
         >
       </nav>
     </header>
-    <main role="contenido-principal">
-      <img
-        src="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
-        alt=""
-      />
-      <h1>yo voy a controlar los enlaces y etiquetas</h1>
-      <p>primer parrafo</p>
-      <hr />
+    <main>
+      <h1>practica enlaces y rutas</h1>
+      <img src="../img/frontend.jfif" target="_blank" />
+      <p>
+        Lorem ipsum dolor sit <strong> uuf</strong> amet consectetur,
+        adipisicing elit. Delectus temporibus eveniet magnam.
+      </p>
+      <p>lista ordenada</p>
+      <ol start="7">
+        <li data-user="nuevo">html</li>
+        <li data-user="viejo">java</li>
+        <li data-user="nuevo">js</li>
+      </ol>
+      <p>lista de cosas que voy a tener</p>
       <ol>
-        <li>lista de video</li>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/7Mxg4VkkRRI"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <li>reproductor de música</li>
-        <audio
-          src="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/audio/Linkin Park.mp3"
-          controls
-          muted
-        ></audio>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
       </ol>
       <hr />
-      <a
-        href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
-        download
-        >open image</a
-      >
       <hr />
-      <h2>lista de rockeros y reggaetoneros</h2>
-      <ol>
-        <li data-user="rockero">rockero</li>
-        <li data-user="reggaetonero">reggaetonero</li>
-      </ol>
-      <h2>el pais del sagrado corazón</h2>
-      <p>donde prima la "fe" que la razón</p>
-      <aside>
-        <nav>
-          <p>chichombiadas</p>
-          <p>troipical</p>
-        </nav>
-      </aside>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        dignissimos placeat, maxime temporibus doloribus beatae incidunt animi
+        dolores, voluptatum dolorem earum fuga. Nemo magnam a sapiente
+        repellendus. Quae praesentium fuga, veritatis necessitatibus maiores
+        neque?
+      </p>
+      <hr />
+      <p>video</p>
+      <audio src="../audio/Linkin Park.mp3" controls muted></audio>
+      <hr />
+      <!-- imagen para que se descargue en el navegador -->
+      <a href="../img/git.png" download="imagen nueva">open image</a>
+      <hr />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sequi
+        exercitationem inventore ullam delectus possimus asperiores, dicta
+        beatae provident id maxime vero illum ut laborum. Blanditiis, nam!
+        Voluptates cumque consequatur quaerat exercitationem enim qui. Nihil
+        explicabo aliquid, autem cumque similique laudantium eveniet nostrum
+        quos suscipit officia incidunt non dolorem quidem.
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/7Mxg4VkkRRI"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <hr />
+      <p>segundo video</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/YEBbqu1d4jE"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <hr />
+      <p>tercer video</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/rzrejE1KzAc"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </main>
     <footer>
       <address>
-        <p>celular +3848484</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289434.096575962!2d-83.40108389540178!3d4.609660846531094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1sen!2sco!4v1599698024347!5m2!1sen!2sco"
-          width="400"
-          height="300"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-          target="_blank"
-        ></iframe>
+        <p>celular +7589595</p>
+        <small>todos los derechos reservados</small>
       </address>
     </footer>
   </body>

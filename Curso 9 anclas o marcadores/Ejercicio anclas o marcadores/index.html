@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio de anclas o marcadores</title>
+    <link
+      rel="icon"
+      href="../Ejercicio anclas o marcadores/img/Github img.png"
+    />
+    <style>
+      ol [data-user="user"] {
+        color: lightcoral;
+      }
+      ol [data-user="admin"] {
+        color: mediumvioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="../Ejercicio anclas o marcadores/img/frontend.jfif" />
+      <nav id="nav" role="menu-principal">
+        <a href="/">inicio</a>
+        <a href="#section-1">acerca</a>
+        <a href="#section-2">servicios</a>
+        <a href="#section-3">marcadores</a>
+        <a href="#section-4">datos</a>
+        <a href="#section-5">contacto</a>
+      </nav>
+    </header>
+    <main role="contenido-principal">
+      <h1 id="section-1">acerca</h1>
+      <a href="#nav">volver arriba</a>
+      <p>
+        las anclas o marcadores es para guiar al usuario a un determinado
+        contenido cuando este le de clic
+      </p>
+      <img src="../Ejercicio anclas o marcadores/img/Github img.png" />
+      <hr />
+      <article>
+        <h2 id="section-2">servicios</h2>
+        <a href="#nav">volver arriba</a>
+        <section>
+          <h3>sección 1 de anclas o marcadores</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sequi
+            rerum voluptatem, saepe quae eos soluta in quis maxime nisi!
+          </p>
+          <hr />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+            obcaecati exercitationem vel autem deserunt? Sunt, ipsum distinctio
+            qui minus deserunt, provident autem omnis nobis rerum molestias,
+            harum sapiente. Voluptatibus, voluptate?
+          </p>
+          <hr />
+          <section>
+            <h3 id="section-3">marcadores</h3>
+            <a href="#nav">volver arriba</a>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+              aut est harum quam praesentium, consequuntur impedit cum
+              reprehenderit, error quas quos iure perspiciatis officiis vitae
+              fugiat placeat ipsam odio et eveniet alias. Saepe laudantium,
+              officiis exercitationem ducimus, nisi eaque dolores sed, itaque
+              distinctio ex alias tempore enim ipsa assumenda. Inventore?
+            </p>
+          </section>
+        </section>
+      </article>
+      <article>
+        <h3 id="section-4">datos</h3>
+        <a href="#nav">volver arriba</a>
+        <section>
+          <h4>sección 1 de anclas</h4>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <cite>curso de html 2020</cite>consectetur adipisicing elit.
+            Officiis tenetur dolore sed inventore qui eos sint, atque
+            repellendus laborum commodi esse rem, cupiditate nihil ipsum
+            reiciendis quo. Ratione doloremque obcaecati natus itaque
+            <q>fuente programador Dorian</q>sequi repellat explicabo totam
+            dicta, aliquid error voluptatum assumenda debitis optio voluptate
+            amet voluptates reiciendis<br />
+            expedita sint quo consectetur laboriosam
+            <strong>htl es un lenguaje de hpertextos</strong>perspiciatis magni
+            velit temporibus? Sed neque ab quasi.
+          </p>
+          <hr />
+          <pre>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nobis aut labore corrupti_________
+              _______ id laborum obcaecati porro excepturi minima beatae, officia recusandae fugit tempore dolor fugiat ad suscipit eligendi sint culpa? Ea a laudantium sequi vero aperiam ad, deserunt reprehenderit, sapiente quae in quas ullam. Sapiente aliquam inventore iste tempore, voluptatibus labore, facilis corporis, obcaecati sit impedit eaque nam. Qui impedit voluptate itaque aut, minus ipsa modi eos adipisci quo quia numquam laboriosam et eveniet deleniti possimus. Exercitationem, sint soluta.</p>
+          </pre>
+          <p>listas</p>
+          <ol reversed>
+            <li data-user="user">empleado</li>
+            <li data-user="user">empleado</li>
+            <li data-user="admin">jefe</li>
+            <li data-user="user">empleado</li>
+            <li data-user="admin">jefe</li>
+          </ol>
+          <hr />
+          <dl>
+            <dt>HTML</dt>
+            <dd>lenguaje de hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hojas de estilo en cascada</dd>
+            <dt>javascript</dt>
+            <dd>servidores</dd>
+          </dl>
+          <hr />
+          <p>lista de contenido audiovisual</p>
+          <ul>
+            <li>video de tortilla squad</li>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rzrejE1KzAc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <li>reproductor de música</li>
+            <audio
+              src="../Ejercicio anclas o marcadores/audio/Linkin Park.mp3"
+              controls
+              muted
+            ></audio>
+          </ul>
+          <p>contenido de ventana modal</p>
+          <dialog open>
+            <sumary><h4>programación</h4></sumary>
+            <p>lista1</p>
+            <p>lista 2</p>
+            <p>lista 3</p>
+            <p>lista 4</p>
+            <p>lista 5</p>
+          </dialog>
+          <hr />
+          <details>
+            <pre>
+              Lorem ipsum dolor sit amet consectetur___2737383 adipisicing elit. Recusandae officia, odio similique quasi facilis neque distinctio error aliquam doloremque, <br>nihil exercitationem adipisci cum odit ipsum culpqui non ducimus!
+            </pre>
+          </details>
+        </section>
+      </article>
+      <aside>
+        <nav>
+          <p>ancla</p>
+          <p>marcador</p>
+        </nav>
+      </aside>
+    </main>
+    <footer>
+      <address id="section-5">
+        contacto/>
+        <a href="#nav">volver arriba</a>
+        <p>celular +84950505</p>
+        <p>ubicación</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25276473.615986843!2d157.28240143159132!3d-39.34475312052714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d2c200e17779687%3A0xb1d618e2756a4733!2sNew%20Zealand!5e0!3m2!1sen!2sco!4v1599775151218!5m2!1sen!2sco"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <small>todos los derechos reservados 2020</small>
+      </address>
+      <a href="#nav">volver arriba</a>
+    </footer>
+  </body>
+</html>
