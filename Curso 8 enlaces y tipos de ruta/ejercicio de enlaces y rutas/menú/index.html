@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio de enlaces y rutas</title>
+    <link
+      rel="icon"
+      href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github img.png"
+    />
+    <style>
+      li[data-user="rockero"] {
+        color: crimson;
+      }
+      li[data-user="reggaetonero"] {
+        color: darkmagenta;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
+      />
+      <nav role="menu-principal">
+        <a href="/">inicio</a>
+        <a
+          href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/acerca.html"
+          target="_blank"
+          >acerca</a
+        >
+        <a
+          href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/plataformas.html"
+          target="_blank"
+          >plataformas</a
+        >
+      </nav>
+    </header>
+    <main role="contenido-principal">
+      <img
+        src="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
+        alt=""
+      />
+      <h1>yo voy a controlar los enlaces y etiquetas</h1>
+      <p>primer parrafo</p>
+      <hr />
+      <ol>
+        <li>lista de video</li>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7Mxg4VkkRRI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <li>reproductor de música</li>
+        <audio
+          src="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/audio/Linkin Park.mp3"
+          controls
+          muted
+        ></audio>
+      </ol>
+      <hr />
+      <a
+        href="/Curso 8 enlaces y tipos de ruta/ejercicio de enlaces y rutas/img/Github.png"
+        download
+        >open image</a
+      >
+      <hr />
+      <h2>lista de rockeros y reggaetoneros</h2>
+      <ol>
+        <li data-user="rockero">rockero</li>
+        <li data-user="reggaetonero">reggaetonero</li>
+      </ol>
+      <h2>el pais del sagrado corazón</h2>
+      <p>donde prima la "fe" que la razón</p>
+      <aside>
+        <nav>
+          <p>chichombiadas</p>
+          <p>troipical</p>
+        </nav>
+      </aside>
+    </main>
+    <footer>
+      <address>
+        <p>celular +3848484</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289434.096575962!2d-83.40108389540178!3d4.609660846531094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1sen!2sco!4v1599698024347!5m2!1sen!2sco"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          target="_blank"
+        ></iframe>
+      </address>
+    </footer>
+  </body>
+</html>

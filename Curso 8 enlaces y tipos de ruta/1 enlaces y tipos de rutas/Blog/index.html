@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>enlaces y rutas</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <header>
+      <!--el menú  inicio es relativo al servidor,
+      osea  se usa siempre la  / -->
+      <!-- este ejemplo es de ruta relativa -->
+      <!-- abrir nueva pestaña -->
+      <!-- atributo target="_blank">nombre de la página</a> -->
+      <nav>
+        <a
+          href="/Curso 8 enlaces y tipos de ruta/1 enlaces y tipos de rutas/Blog/index.html"
+          >inicio</a
+        >
+        <a
+          href="/Curso 8 enlaces y tipos de ruta/1 enlaces y tipos de rutas/Blog/blog.html"
+          >Blog</a
+        >
+        <a
+          href="/Curso 8 enlaces y tipos de ruta/1 enlaces y tipos de rutas/Blog/galeria.html"
+          target="_blank"
+          >galeria</a
+        >
+        <a href="https://deceniodigital.com" target="_blank">deceniodigital</a>
+        >
+        <a
+          href="/Curso 8 enlaces y tipos de ruta/1 enlaces y tipos de rutas/Github img.png"
+          target="_blank"
+          >open img></a
+        >
+        <!-- rutas absolutas -->
+        <!-- son los links de páginas externas, siempre usar el protocolo de seguridad https:
+        ejemplo https://www.google.com -->
+        <!-- forzar la descarga de imágenes o archivos dentro del html o en una nueva pestaña con target -->
+        <!-- "img o image (como este escrito)" -->
+        <!-- <a href="/img.png"></a> -->
+      </nav>
+    </header>
+    <main>
+      <h1>inicio</h1>
+      <!-- existen dos tipos de rutas -->
+      <!-- ruta absoluta -->
+      <!-- son únicas y siempre conducen al mismo sitio
+      https://www.google.com -->
+      <!-- rutas relativas -->
+      <!-- están en relación a la ubicación del archivo -->
+      <!-- 1 - a la carpeta actual -->
+      <!-- 2- a la raiz del servidor, esta es la opción más 
+      recomendable, para no tener problemas  -->
+      <!-- la / representa la raiz del servidor -->
+      <!-- para subir de nivel se utiliza ../ -->
+      <!-- si dentro de la carpeta "blog" tengo 3 html -->
+      <!--blog.html  -->
+      <!-- galeria.html -->
+      <!--index.html  -->
+      <!-- se usa ../index.html, para subir de nivel -->
+    </main>
+  </body>
+</html>
