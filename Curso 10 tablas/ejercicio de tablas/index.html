@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio de tablas</title>
+    <link rel="icon" href="../ejercicio de tablas/img/Github.png" />
+  </head>
+  <body>
+    <header>
+      <img src="../ejercicio de tablas/img/frontend.jfif" />
+      <nav id="nav" role="menu-principal">
+        <a href="/">inicio</a>
+        <a href="../ejercicio de tablas/acerca.html" target="_blank">acerca</a>
+        <a href="../ejercicio de tablas/productos.html" target="_blank"></a>
+        <a href="../ejercicio de tablas/blog.html" target="_blank">Blog</a>
+        <a href="../ejercicio de tablas/contacto.html" target="_blank"></a>
+      </nav>
+    </header>
+    <main role="contenido-principal">
+      <h1>curso de tablas en html</h1>
+      <article>
+        <h2>primera tablas</h2>
+        <section>
+          <h3>sección 1 de cración de tablas</h3>
+          <p>
+            ¿que son las tablas, estas se pueden asimilar como las tablas de
+            excel
+          </p>
+          <hr />
+          <p>etiquetas de tablas:<br /></p>
+          <ol>
+            <li>table crear tabla</li>
+            <li>tr crear filas</li>
+            <li>td crear celdas</li>
+            <li>thead cabecera de la tabla</li>
+            <li>tbody cuerpo de la tabla</li>
+            <li>tfoot pie de página</li>
+          </ol>
+
+          <h3>atributos</h3>
+          <ol>
+            <li>colspan columna</li>
+            <li>rowspan celdas</li>
+          </ol>
+        </section>
+      </article>
+      <h3>creación de la primera</h3>
+      <style>
+        /* th es cabecera */
+        th {
+          background: darkcyan;
+        }
+        tr {
+          color: red;
+        }
+        caption {
+          background-color: fuchsia;
+        }
+        .yellow {
+          background: yellow;
+        }
+      </style>
+      <details>
+        <summary>tabla de horario</summary>
+        <table border="1">
+          <caption>
+            Horario
+          </caption>
+          <colgroup>
+            <!-- <col con el atributo span sirve para ponerle un color determinado a la columna -->
+
+            <col class="yellow" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>hora</th>
+              <th>lunes</th>
+              <th>martes</th>
+              <th>miercoles</th>
+              <th>jueves</th>
+              <th>viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>12:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr class="red">
+              <td rowspan="2">12:30 pm</td>
+              <td colspan="5">Descanso</td>
+            </tr>
+            <tr>
+              <td colspan="5">Charla</td>
+            </tr>
+            <tr>
+              <td>2:30 pm</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>17:00 pm</td>
+              <td colspan="5">Fin de la jornada</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total de horas</td>
+              <td colspan="5">5 horas 30 minutos</td>
+            </tr>
+          </tfoot>
+        </table>
+      </details>
+    </main>
+  </body>
+</html>

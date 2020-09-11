@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+  </head>
+  <body>
+    <!-- el estilo se hace con CSS -->
+    <!-- tablas -->
+    se utilizan para mostrar datos tabulados, eso significa mostrar datos en
+    forma de tablas se asemeja a un excel en html, se construiria como una
+    tabla, sólo para estos tipos de datos
+    <!-- etiqueta <table> </table> -->
+    se utiliza la etiqueta table para crear una tabla, las tablas se basan en
+    filas
+    <!-- crear filas <tr> table row (fila) </tr> -->
+    con la etiqueta tr se crean las filas
+    <!-- crear celdas <td> table data (celda) </td> -->
+    con la etiqueta td se crean las celdas
+    <!-- las tablas se dividen en 3 partes fundamentales -->
+    <!-- <thead> -->cabecera de la tablas
+    <!-- tbody -->cuerpo de la tablas
+    <!-- tfoot  -->pie de la tabla
+    <!-- atributos  -->para modificar el tamaño de las celdas
+    <!-- atributo colspan -->
+    fusiona columnas horizontal
+    <!-- atributo rowspan -->
+    fusiona celdas vertical
+    <!-- ejemplo de creación de tablas -->
+    <!-- pilas border ya no se usa -->
+    <style>
+      /* th es cabecera */
+      th {
+        background: darkcyan;
+      }
+      td {
+        color: darkred;
+      }
+      caption {
+        background-color: fuchsia;
+      }
+      .red {
+        background: red;
+      }
+      .yellow {
+        background: yellow;
+      }
+      
+    </style>
+    <!-- pilas border no se usa -->
+    <table border="1">
+      <caption>
+        Horario
+      </caption>
+      <!-- colgroup, sirve para agrupar filas y celdas -->
+      <colgroup>
+        <!-- col - es columna -->
+        <col class="blue">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>hora</th>
+          <th>lunes</th>
+          <th>martes</th>
+          <th>miercoles</th>
+          <th>jueves</th>
+          <th>viernes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:00 am</td>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>JS</td>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>12:00 am</td>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>JS</td>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr class="red">
+          <td rowspan="2">12:30 pm</td>
+          <td colspan="5">Descanso</td>
+        </tr>
+        <tr>
+          <td colspan="5">Charla</td>
+        </tr>
+        <tr>
+          <td>2:30 pm</td>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>JS</td>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr class="yellow">
+          <td>17:00 pm</td>
+          <td colspan="5">Fin de la jornada</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total de horas</td>
+          <td colspan="5">5 horas 30 minutos</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- ejemplo 2 con varias columnas pintadas -->
+    <!-- style es puro css -->
+    <style>
+        /* th es cabecera */
+        th {
+          background: darkcyan;
+        }
+        td {
+          color: darkred;
+        }
+        caption {
+          background-color: fuchsia;
+        }
+        .red {
+          background: red;
+        }
+        .yellow {
+          background: yellow;
+        }
+        .blue {
+          background-color: blue;
+        }
+        .grey {
+          background-color: grey;
+        }
+      </style>
+      <details>
+        <summary>tabla de horario</summary>
+        <table border="1">
+          <caption>
+            Horario
+          </caption>
+          <colgroup>
+            <!-- <col con el atributo span sirve para ponerle un color determinado a la columna -->
+            <col span="3" />
+            <col class="blue" />
+            <col class="yellow" />
+            <col class="grey" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>hora</th>
+              <th>lunes</th>
+              <th>martes</th>
+              <th>miercoles</th>
+              <th>jueves</th>
+              <th>viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>12:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr class="red">
+              <td rowspan="2">12:30 pm</td>
+              <td colspan="5">Descanso</td>
+            </tr>
+            <tr>
+              <td colspan="5">Charla</td>
+            </tr>
+            <tr>
+              <td>2:30 pm</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>17:00 pm</td>
+              <td colspan="5">Fin de la jornada</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total de horas</td>
+              <td colspan="5">5 horas 30 minutos</td>
+            </tr>
+          </tfoot>
+        </table>
+        <!-- ejemplo 3 una sola colimna pintada, se debe ir probando cada columna para encontrar, el dia correcto -->
+          /* th es cabecera */
+        th {
+          background: darkcyan;
+        }
+        td {
+          color: darkred;
+        }
+        caption {
+          background-color: fuchsia;
+        }
+        .yellow {
+          background: yellow;
+        }
+      </style>
+      <details>
+        <summary>tabla de horario</summary>
+        <table border="1">
+          <caption>
+            Horario
+          </caption>
+          <colgroup>
+            <!-- <col con el atributo span sirve para ponerle un color determinado a la columna -->
+
+            <col class="yellow" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>hora</th>
+              <th>lunes</th>
+              <th>martes</th>
+              <th>miercoles</th>
+              <th>jueves</th>
+              <th>viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>12:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr class="red">
+              <td rowspan="2">12:30 pm</td>
+              <td colspan="5">Descanso</td>
+            </tr>
+            <tr>
+              <td colspan="5">Charla</td>
+            </tr>
+            <tr>
+              <td>2:30 pm</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>17:00 pm</td>
+              <td colspan="5">Fin de la jornada</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total de horas</td>
+              <td colspan="5">5 horas 30 minutos</td>
+            </tr>
+          </tfoot>
+        </table>
+        <!-- ejemplo 4 resaltar colores de los dias -->
+        <style>
+        /* th es cabecera */
+        th {
+          background: darkcyan;
+        }
+        tr {
+          color: red;
+        }
+        caption {
+          background-color: fuchsia;
+        }
+        .yellow {
+          background: yellow;
+        }
+      </style>
+      <details>
+        <summary>tabla de horario</summary>
+        <table border="1">
+          <caption>
+            Horario
+          </caption>
+          <colgroup>
+            <!-- <col con el atributo span sirve para ponerle un color determinado a la columna -->
+
+            <col class="yellow" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>hora</th>
+              <th>lunes</th>
+              <th>martes</th>
+              <th>miercoles</th>
+              <th>jueves</th>
+              <th>viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>12:00 am</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr class="red">
+              <td rowspan="2">12:30 pm</td>
+              <td colspan="5">Descanso</td>
+            </tr>
+            <tr>
+              <td colspan="5">Charla</td>
+            </tr>
+            <tr>
+              <td>2:30 pm</td>
+              <td>HTML</td>
+              <td>CSS</td>
+              <td>JS</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>17:00 pm</td>
+              <td colspan="5">Fin de la jornada</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total de horas</td>
+              <td colspan="5">5 horas 30 minutos</td>
+            </tr>
+          </tfoot>
+        </table>
+  </body>
+</html>
