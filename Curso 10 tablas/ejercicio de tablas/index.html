@@ -1,85 +1,120 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="es" dir="auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio de tablas</title>
+    <title>Ejercicio de tablas 100%</title>
     <link rel="icon" href="../ejercicio de tablas/img/Github.png" />
+    <style>
+      caption {
+        background-color: cornflowerblue;
+      }
+      th {
+        color: green;
+      }
+      tr {
+        color: hotpink;
+      }
+      .green {
+        background: green;
+      }
+      .brown {
+        color: brown;
+      }
+      ol [data-user="curso"] {
+        color: lightslategrey;
+      }
+      ol [data-user="reproductor"] {
+        color: maroon;
+      }
+      .blue {
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <header>
       <img src="../ejercicio de tablas/img/frontend.jfif" />
       <nav id="nav" role="menu-principal">
         <a href="/">inicio</a>
-        <a href="../ejercicio de tablas/acerca.html" target="_blank">acerca</a>
-        <a href="../ejercicio de tablas/productos.html" target="_blank"></a>
-        <a href="../ejercicio de tablas/blog.html" target="_blank">Blog</a>
-        <a href="../ejercicio de tablas/contacto.html" target="_blank"></a>
+        <a href="../ejercicio de tablas/sobre mi.html" target="_blank"
+          >sobre mi</a
+        >
+        <a href="../ejercicio de tablas/vitrina.html" target="_blank"
+          >vitrina</a
+        >
+        <a href="../ejercicio de tablas/blogger.html" target="_blank"
+          >blogger</a
+        >
+        <a href="../ejercicio de tablas/contactanos.html" target="_blank"
+          >contactanos</a
+        >
       </nav>
     </header>
     <main role="contenido-principal">
-      <h1>curso de tablas en html</h1>
+      <img src="../ejercicio de tablas/img/Github.png" />
+      <h1>clases de programación</h1>
+      <a href="#nav"></a>
       <article>
-        <h2>primera tablas</h2>
+        <h2>materias</h2>
+        <a href="#nav"></a>
         <section>
-          <h3>sección 1 de cración de tablas</h3>
+          <h3>sección de lenguajes</h3>
+          <a href="#sección de lenguajes"></a>
           <p>
-            ¿que son las tablas, estas se pueden asimilar como las tablas de
-            excel
+            Lorem ipsum dolor <strong>HTML</strong> sit amet consectetur
+            adipisicing elit. Et asperiores deleniti itaque qui iure, placeat
+            dicta ipsam quibusdam maxime quos debitis ab numquam dolorum aut!
+            Minus nemo minima esse vitae.
           </p>
           <hr />
-          <p>etiquetas de tablas:<br /></p>
-          <ol>
-            <li>table crear tabla</li>
-            <li>tr crear filas</li>
-            <li>td crear celdas</li>
-            <li>thead cabecera de la tabla</li>
-            <li>tbody cuerpo de la tabla</li>
-            <li>tfoot pie de página</li>
-          </ol>
-
-          <h3>atributos</h3>
-          <ol>
-            <li>colspan columna</li>
-            <li>rowspan celdas</li>
-          </ol>
+          <h3>freamworks</h3>
+          <p>
+            Lorem ipsum dolor sit, amet
+            <cite> "programador 2020"</cite> consectetur adipisicing elit.
+            Maxime, eum! Repellat expedita earum sapiente accusantium in cumque
+            alias, atque, suscipit sequi nemo enim error dolore, dolores
+            blanditiis vitae dicta quos quia ullam ducimus laboriosam
+            repudiandae at asperiores. Quo, autem quis!<q>FuenteDeepweb</q>
+          </p>
+          <hr />
+          <pre>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur recusandae vel corporis labore deleniti ____________
+            282839393_____voluptas commodi, aliquam veniam maiores quia suscipit accusantium nisi error vero ipsum saepe asperiores, eaque illo! <br>Perferendis, modi impedit dolor vitae alias velit a ea quasi ex ad iusto animi recusandae eos quaerat unde magnam optio, distinctio rem esse officia!<wbr> Ad omnis esse perspiciatis.
+          </pre>
         </section>
       </article>
-      <h3>creación de la primera</h3>
-      <style>
-        /* th es cabecera */
-        th {
-          background: darkcyan;
-        }
-        tr {
-          color: red;
-        }
-        caption {
-          background-color: fuchsia;
-        }
-        .yellow {
-          background: yellow;
-        }
-      </style>
+      <h3 id="Horario">Horario de clases</h3>
+      <a href="#nav">volver arriba</a>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        aspernatur, inventore omnis rerum minus itaque iusto magni excepturi
+        amet laborum officia vel ullam iste quisquam odit maiores nostrum,
+        obcaecati eveniet sint. Necessitatibus recusandae odio, quae iste
+        quibusdam saepe, at praesentium repudiandae doloribus aliquid obcaecati!
+        Laborum, corrupti eaque aspernatur dolores velit non facilis repellendus
+        veniam quo tenetur reprehenderit voluptatibus doloribus qui nihil,
+        similique earum aliquid aut sunt accusamus suscipit repellat. Corrupti
+        repellat sunt quam iusto earum cupiditate omnis delectus reiciendis
+        alias!
+      </p>
+      <hr />
       <details>
-        <summary>tabla de horario</summary>
+        <summary class="brown">Cronograma de clases</summary>
         <table border="1">
           <caption>
-            Horario
+            Horario de los cursos
           </caption>
-          <colgroup>
-            <!-- <col con el atributo span sirve para ponerle un color determinado a la columna -->
-
-            <col class="yellow" />
-          </colgroup>
+          <colgroup></colgroup>
           <thead>
             <tr>
-              <th>hora</th>
-              <th>lunes</th>
-              <th>martes</th>
-              <th>miercoles</th>
-              <th>jueves</th>
-              <th>viernes</th>
+              <th>Hora</th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miercoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+              <th>Sabado</th>
             </tr>
           </thead>
           <tbody>
@@ -87,46 +122,115 @@
               <td>8:00 am</td>
               <td>HTML</td>
               <td>CSS</td>
-              <td>JS</td>
-              <td>HTML</td>
-              <td>CSS</td>
+              <td>JAVASCRIPT</td>
+              <td>ANGULAR</td>
+              <td>REACT</td>
+              <td>PRACTICA</td>
             </tr>
             <tr>
-              <td>12:00 am</td>
+              <td>10:am</td>
               <td>HTML</td>
               <td>CSS</td>
-              <td>JS</td>
-              <td>HTML</td>
-              <td>CSS</td>
-            </tr>
-            <tr class="red">
-              <td rowspan="2">12:30 pm</td>
-              <td colspan="5">Descanso</td>
+              <td>JAVASCRIPT</td>
+              <td>ANGULAR</td>
+              <td>REACT</td>
+              <td>PRACTICA</td>
             </tr>
             <tr>
-              <td colspan="5">Charla</td>
+              <td rowspan="1">12:30 pm</td>
+              <td colspan="7">Receso</td>
+            </tr>
+            <tr class="green">
+              <td rowspan="1">1:30 pm</td>
+              <td colspan="7">Asesoria</td>
             </tr>
             <tr>
-              <td>2:30 pm</td>
+              <td>3:00 pm</td>
               <td>HTML</td>
               <td>CSS</td>
-              <td>JS</td>
-              <td>HTML</td>
-              <td>CSS</td>
+              <td>JAVASCRIPT</td>
+              <td>ANGULAR</td>
+              <td>REACT</td>
+              <td>PRACTICA</td>
             </tr>
             <tr>
-              <td>17:00 pm</td>
-              <td colspan="5">Fin de la jornada</td>
+              <td>19:00 pm</td>
+              <td colspan="7">Fin de las clases</td>
             </tr>
           </tbody>
           <tfoot>
-            <tr>
-              <td>Total de horas</td>
-              <td colspan="5">5 horas 30 minutos</td>
-            </tr>
+            <td>Total de creditos</td>
+            <td colspan="7">7 horas 30 minutos</td>
           </tfoot>
         </table>
       </details>
+      <hr />
+      <dialog class="blue">
+        <h3>Hola mundo</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+          quaerat. Dolorem praesentium nostrum ea ab fugiat placeat? Aut,
+          deleniti hic!
+        </p>
+      </dialog>
+      <hr />
+      <h3>lista descriptiva</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>lenguaje de hipertextos</dd>
+        <dt>CSS</dt>
+        <dd>Hojas estilo cascada</dd>
+        <dt>javascript</dt>
+        <dd>servidores</dd>
+        <dt>freamworks</dt>
+        <dd>extensiones</dd>
+      </dl>
+      <h3>Contenido audiovisual</h3>
+      <ol type="1">
+        <li data-user="curso">Curso de tablas</li>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/q5MvUl7tJPE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <li data-user="reproductor">Reproductor de música</li>
+        <audio
+          src="../ejercicio de tablas/audio/Linkin Park.mp3"
+          controls
+          muted
+        ></audio>
+      </ol>
+      <aside>
+        <nav>
+          <p>para más información ve al enlace</p>
+          <a
+            href="https://computerhoy.com/noticias/tecnologia/10-lenguajes-programacion-van-arrasar-2020-583287"
+            target="_blank"
+            >enlace</a
+          >
+        </nav>
+      </aside>
     </main>
+    <footer>
+      <address>
+        <p>número célular +75585595 Colombia</p>
+        <p>Ubicación Medellin</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.69937711312!2d-75.65125342544997!3d6.244369473968134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Medellin%2C%20Antioquia!5e0!3m2!1sen!2sco!4v1599931767998!5m2!1sen!2sco"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </address>
+      <p>&copy; Todos los derechos reservados [2020]</p>
+      <a href="#nav">volver arriba</a>
+    </footer>
   </body>
 </html>
