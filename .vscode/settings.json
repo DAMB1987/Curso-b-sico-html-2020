@@ -3,7 +3,6 @@
   "editor.wordWrap": "on",
   "editor.fontFamily": "fire code medium",
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 100,
   "git.autofetch": true,
   "editor.fontSize": 20
 }
