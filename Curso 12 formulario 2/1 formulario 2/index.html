@@ -1,0 +1,140 @@
+<!--Tipos de input  -->
+<!-- Radio -->
+crea un radio de button
+<!-- checkbox -->
+crea un checkbox
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 2</title>
+    <link href="tipo de fuente" <link rel="icon" href="" />
+  </head>
+  <body>
+    <header>
+      <h1>Formularios número 2</h1>
+    </header>
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <main>
+      <h2></h2>
+      <p>Lorem ipsum dolor sit.</p>
+      <img src="" alt="" />
+      <p>Lorem, ipsum dolor.</p>
+      <hr />
+      <!-- para elegir entre hombre o mujer, se debe usar el atributo name -->
+      <!-- etiqueta propia para los formularios, para escribir seleccione alguna opción , se usa legend -->
+      <!-- colocar el id! -->
+      <!-- con radio buton , se selecciona una opción y no se puede desmarcar -->
+      <form action="#">
+        <legend>seleccione sexo</legend>
+        <label for="man">Hombre</label>
+        <input type="radio" id="man" name="sex" />
+        <label for="woman">Mujer</label>
+        <input type="radio" id="woman" name="sex" />
+
+        <!-- checkbox sirve para marcar diferentes opciones, pero también se puede desmarcar -->
+        <legend>seleccione hobbies</legend>
+        <label for="sport">deporte</label>
+        <input type="checkbox" id="sport">
+        <label for="eat">comer</label>
+        <input type="checkbox" id="comer">
+       
+
+        <!-- input de fecha y hora -->
+        <!-- date permite seleccionar la fecha de un calendario  -->
+        <!-- datetime-local permite selecionar fecha y hora  (obseloto por la whatwg) -->
+        <!-- time. permite introducir una hora sin zona horaria especifica -->
+        <!-- month  permite seleccionar un mes de un calendario  -->
+        <!-- week permite seleccionar una semana -->
+
+        <style>
+          .red{
+            background-color: red;
+          }
+          .green{
+            color:green;
+          }
+          .pink{
+            background-color: pink;
+          }
+          .blue{
+            color: blue;
+          }
+        </style>
+
+        <form action="#">
+          <input class="red" type="date">
+          <input class="green" type="time">
+          <input class="pink" type="month">
+          <input  class="blue"type="week">
+        </form>
+        <!-- color permite seleccionar un color de una paleta de colores -->
+        <!-- email sirve para introducir un email con validación html5 (insegura) validar desde js y el servidor -->
+        <!-- boton de validación es input  type="submit" -->
+        <!-- file permite subir archivos al servidor , solo sirve  en js y php-->
+        <!-- range crea un slide para seleccionar un valor númerico -->
+        <!-- search crea un campo igual que text, pero con semántica de busqueda -->
+        <!-- tel crea un campo para introducir  télefono, en un movil sale un teclado diferente -->
+        <!-- url crea un campo para introducir una url -->
+        <!-- datails crea un filtro, en el se podra buscar -->
+        <!-- datalist es una nueva etiqueta que se estará implementando -->
+        <!-- input list sirve para hacer una especie de filtro, donde se pueden escoger varias opciones -->
+        
+        <style>
+          .red{
+            color: red;
+          }
+          .brown{
+            background-color: brown;
+          }
+          .blue{
+            color: blue;
+          }
+          .grey{
+            background-color:grey
+          }
+          .yellow{
+            color: yellow;
+          }
+          .pink{
+            background-color: pink;
+          }
+          .green{
+            color: greenyellow;
+          }
+          .yellow{
+            background-color: yellow;
+          }
+          .pink{
+            background-color:pink
+          }
+        </style>
+
+        <input class="red"type="color">
+        <input class="brown" type="email">
+        <input class="pink"type="submit">
+        <input class="blue" type="file">
+        <input  class="grey" type="range" min="0" max="50" step="10">
+        <input class="yellow" type="search">
+        <input class="pink" type="tel">
+        <input class="green"type="url">
+        <!-- como usar el input datalist ejemplo -->
+        <input class="yellow"  type="datalist">
+        <label for=" browser">elija un navegador</label>
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Microsoft Edge">
+            <option value="Brave">
+           </datalist>
+    </main>
+  </body>
+</html>

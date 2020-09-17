@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio formulario 2</title>
+    <link href="tipo de fuente" />
+    <link rel="icon" href="../Ejercicio formulario 2/img/Flor.jpg" />
+  </head>
+  <body>
+    <header>
+      <img src="../Ejercicio formulario 2/img/Github.png" alt="" />
+      <nav role="menu-principal">
+        <a href="/">Inicio</a>
+        <a href="../Ejercicio formulario 2/sobre.html" target="_blank">Sobre</a>
+        <a href="../Ejercicio formulario 2/servicios.html" target="_blank"
+          >servicios</a
+        >
+        <a href="../Ejercicio formulario 2/blog.html" target="_blank">blog</a>
+        <a href="../Ejercicio formulario 2/contacto.html" target="_blank"
+          >contacto</a
+        >
+      </nav>
+      <h1>Creando formularios segunda parte</h1>
+    </header>
+    <main>
+      <h2>Contrucción de formatos de contenidos</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti
+        architecto porro.
+      </p>
+      <img src="../Ejercicio formulario 2/img/frontend.jfif" alt="" />
+      <hr />
+      <p>lista de formularios</p>
+      <style>
+        ol [data-user="contacto"] {
+          color: teal;
+        }
+        ol [data-user="pregunta"] {
+          color: thistle;
+        }
+        ol [data-user="más información"] {
+          color: tomato;
+        }
+        .red {
+          background-color: red;
+        }
+      </style>
+      <ol>
+        <li data-user="contacto">Contacto</li>
+        <li data-user="pregunta">Preguntas</li>
+        <li data-user="más información">más información</li>
+      </ol>
+      <section>
+        <h3>Tipo formas de integrar un formulario</h3>
+        <p>
+          <strong>Backend</strong> la información va directamente al servidor
+        </p>
+        <br />
+        <p>
+          <strong>frontend</strong>El propio navegador interactua con el
+          servidor
+        </p>
+        <hr />
+        <p>etiquetas principales</p>
+        <ul>
+          <li>label</li>
+          <li>input</li>
+        </ul>
+      </section>
+      <section>
+        <h3>contenido audiovisual</h3>
+        <p>se presentara un video y audio</p>
+        <ol start="6">
+          <li>video instructivo de html</li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xzrTuxZxuLE"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <li>audio de música</li>
+          <audio
+            src="../Ejercicio formulario 2/audio/Linkin Park.mp3"
+            controls
+            muted
+          ></audio>
+        </ol>
+      </section>
+      <aside>
+        <nav>
+          <p>
+            más videos en el siguiente
+            <a
+              href="https://www.youtube.com/watch?v=xzrTuxZxuLE&list=PLROIqh_5RZeDxZnSlxuCtJ3Ip1t5qIXkB&index=13"
+              target="_blank"
+              >enlace</a
+            >
+          </p>
+          <p>más información</p>
+        </nav>
+      </aside>
+      <p>por favor llenar el siguiente formulario</p>
+      <form action="#">
+        <label for="name">Nombre</label>
+        <input type="nombre" id="name" />
+        <label for="city">ciudad</label>
+        <input type="city" id="city" />
+        <label for="número">número</label>
+        <input type="número" id="número" />
+        <input class="red" type="submit" value="enviar" />
+      </form>
+    </main>
+    <footer>
+      <address>
+        <p>célular +37839394</p>
+        <p>ubicación</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25277892.98827773!2d157.25813191284823!3d-39.34082834364266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d2c200e17779687%3A0xb1d618e2756a4733!2sNew%20Zealand!5e0!3m2!1sen!2sco!4v1600370461088!5m2!1sen!2sco"
+          width="400"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </address>
+      <p>&reg; <small> Todos los derechos reservados [2020]</small></p>
+    </footer>
+  </body>
+</html>

@@ -4,5 +4,6 @@
   "editor.fontFamily": "fire code medium",
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
-  "editor.fontSize": 20
+  "editor.fontSize": 20,
+  "editor.codeActionsOnSave":true ,
 }

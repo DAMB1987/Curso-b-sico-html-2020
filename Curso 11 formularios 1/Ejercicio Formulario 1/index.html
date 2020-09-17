@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio de formularios</title>
+    <link href="tipo de fuente" />
+    <link rel="icon" href="../Ejercicio Formulario 1/img/Github.png" />
+  </head>
+  <body>
+    <header>
+      <img src="../Ejercicio Formulario 1/img/frontend.jfif" alt="" />
+      <h1>Formulario 1</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li>
+          <a href="../Ejercicio Formulario 1/sobre.html" target="_blank"
+            >sobre mi</a
+          >
+        </li>
+        <li>
+          <a href="../Ejercicio Formulario 1/servicios.html" target="_blank"
+            >servicios</a
+          >
+        </li>
+        <li>
+          <a href="../Ejercicio Formulario 1/blog.html" target="_blank">Blog</a>
+        </li>
+        <li>
+          <a href="../Ejercicio Formulario 1/contacto.html" target="_blank"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Creando formularios</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga
+        minus non totam rerum veritatis quaerat! Voluptas possimus ad quam.
+      </p>
+      <hr />
+      <h3>nuevos conocimientos</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+        voluptate reiciendis exercitationem facilis inventore. Facilis, aliquid
+        quae. Eius nisi cupiditate cumque eum architecto deserunt aut
+        consectetur, magni ab porro. Nihil!
+      </p>
+      <hr />
+
+      <!-- el atributo action sirve para decirle a form que es lo que debe de hacer una vez que se envie -->
+      <!-- label sirve para identificar el campo -->
+      <!-- al hacer clic en el nombre osea label, también se activa el campo de texto -->
+      <!-- dentro de la etiqueta label se puede poner input, que es un campo de texto por defecto -->
+      <!-- pero al usar el action="#" se evita que se reinicie -->
+      <form action="#">
+        <label
+          >Nombre
+          <input type="text" />
+        </label>
+        <!-- otra forma de escribir el campo de texto -->
+        <!-- una buena practica es mantener separados los campos de textos de un formulario -->
+        <label for="name">name</label>
+        <input type="tex" id="name" />
+        <!-- otro tipo de input -->
+        <!-- al escribir number el campo de texto sólo admite números -->
+        <label for="age">Edad</label>
+        <input type="number" />
+
+        <label for="city">ciudad</label>
+        <input type="city" id="city" />
+        <!-- para que salgan los * eso se hace en javascript -->
+
+        <label for="pass">password</label>
+        <input type="pasword" />
+
+        <!--para añadir botones  -->
+        <!-- value=" sirve para ponerl el texto que uno quiere que aparezca" -->
+        <input type="submit" value="enviar formulario" />
+        <!-- poner una imágen -->
+        <input type="image" src="../Ejercicio Formulario 1/img/Github.png" />
+        <!-- etiqueta boton -->
+        <!-- inicialemente los formularios se reinician solos -->
+        <!-- pero al usar el action="#" se evita que se reinicie -->
+        <button>enviar</button>
+        <!-- otro tipo de boton es  -->
+        <input type="reset" valvue="resetear formulario" />
+      </form>
+    </main>
+  </body>
+</html>
