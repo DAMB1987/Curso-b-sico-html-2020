@@ -1,0 +1,67 @@
+<!-- formulario 4, atributos -->
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios 4 y atributos</title>
+    <link href="tipo de fuente" />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+    </header>
+    <nav>
+      <a href=""></a>
+    </nav>
+    <main>
+      <!-- <fieldset> sirve para agrupar distintos campos -->
+
+      <!-- atributos que se consideran true o false -->
+      <!-- boolean -->
+      <!-- required: hace que un campo sea obligatorio -->
+      <!-- disabled: desactiva la interración con un campo, desactiva la casilla -->
+      <!-- checked: marca un radio  checkbox por defecto -->
+      <!-- selected: marca un option por defecto -->
+      <!-- autofocus: pone el foco automatico en un campo o resalta el campo automaticamente -->
+      <!-- readonly: hace que el campo solo sea de lectura , solo sirve para lectura, aunque no lo desactiva-->
+
+      <!-- otros  a estos se les debe dar un valor para que funcionen, no son atributos buleanos-->
+
+      <!-- maxlenght/minlenght: determina la cantidad maxima o minima de caracteres en un campo, siempre va en el input, pone un limite de palabras eje Carlos , en este caso 6 letras -->
+      <!-- min/max: determina el minimo y el maximo en los campos númericos, uno escoge desde que número o años de edad -->
+      <!-- autocomplete on/off (formulario) Permite al navegador autocompletar con los datos que tiene almacenado -->
+
+      <style>
+        .blue {
+          background-color: blueviolet;
+        }
+      </style>
+
+      <form action="#" autocomplete="on">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" required maxlength="6" />
+          <label for="surname">Apellidos</label>
+          <input type="text" id="surname" autofocus />
+          <label for="age">edad</label>
+          <input type="number" id="age" min="18" max="80" autofocus />
+        </fieldset>
+        <!-- para que solo se marque una casilla se usa el atributo name="" checked es para marcarlo automaticamente -->
+        <!-- input radio solo se puede poner 1 -->
+        <!-- checked box, se pueden poner todos los que uno quiera -->
+        <input type="radio" name="sex" checked />Hombre
+        <input type="radio" name="sex" />Mujer
+        <!-- select es para seleccionar una opción predeterminada, la que uno escoja -->
+        <select name=" " id="">
+          <option value="" selected>HTML</option>
+          <option value="">CSS</option>
+          <option value="">JS</option>
+        </select>
+        <button class="blue">enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 3- Etiquetas select- textarea</title>
+    <link href="tipo de fuente" />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <header>
+      <img src="" alt="" />
+      <h1></h1>
+    </header>
+    <nav>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
+    <h2>Formularios 3, selct, textarea</h2>
+    <!-- <select name="" id="" >-->
+    <!-- <option value=""> </option>-->
+    <!-- </select> -->
+
+    <!-- <textarea name="" id="" cols="30" -->
+    <!-- rows="10"><textarea> -->
+    <!-- value, es lo que se escribe para que vaya al formulario -->
+    <!-- para que este en forma de lista para que se vean todos los elementos y poder elegir <select multiple name="" -->
+    <!-- optgroup + el atributo label, para saber a que referencia se esta haciendo a ese grupo -->
+    <!-- si no se quiere hacer scroll , se pone el atributo size -->
+
+    <form action="#">
+      <label for="languages">lenguajes informaricos</label>
+      <select size="7" multiple name="" id="languages">
+        <optgroup label="lenguajes de marcado">
+          <option value="html">HTML</option>
+          <option value="xml">XML</option>
+        </optgroup>
+        <optgroup label="lenguajes de diseño">
+          <option value="css">CSS</option>
+        </optgroup>
+        <optgroup label="lenguajes de programación">
+          <option value="js">JS</option>
+        </optgroup>
+      </select>
+
+      <!-- <textarea> es un recuadro blanco que sale para escribir -->
+      <!-- sus dimensiones serian cols 30 y rows 10 -->
+      <!-- cols columna  se puede cambiar el 30-->
+      <!-- rows filas se puede cambiar el 10-->
+      <!-- el textarea para dejar estatico el recuadro se usa el atributo resize:none solo se usa en CSS-->
+      <!-- name sirve para enviar el formulario -->
+      <label for="text">mensaje</label>
+      <textarea
+        style="resize: none"
+        name=""
+        id="text"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </form>
+  </body>
+</html>
