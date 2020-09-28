@@ -1,0 +1,63 @@
+<!-- meta viewport -->
+<!-- sale al poner el !, automaticamente, meta name="viewport" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      user-scalable="yes"
+      ,
+      minimum-scale="1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <!-- etiqueta viewport, lo que hace es identificar el dispositivo donde se está renderizando la página -->
+
+      <!--  <meta name="viewport" content="width=device-width, 
+      <!-- width=device-width,  es el  ancho de la página, es también el ancho del dispositivo-->
+
+      <!-- initial-scale=1.0">   
+      es la escala inicial de la página, que inicialmente es el tamaño real de la página es decir 1-->
+
+      <!-- otros atributos -->
+
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2"-->
+
+      <h1>Meta viewport</h1>
+      <ul>
+        <li>
+          width=device-width (establece el ancho de la web, puede ser una medida
+          o device-width)
+        </li>
+        <li>
+          initial-scale=1. representa la escala inicial de la web, se puede
+          poner un número 1,2,3 (pero siempre se usa el 1, porque asi esta
+          establecida la web)
+        </li>
+        <li>maximum-scale (establece la escala maxima de la web)</li>
+        <li>minimum-scale (establece la escala minima de la web)</li>
+        <li>
+          ESTA ETIQUETA ES FUNDAMENTAL PARA EL RESPONSIVE DE LA PÁGINA, USARLO
+          CON CSS, user-scalable(establece si el usuario puede hacer zoom en la
+          página o no, este recibe los valores yes o no)
+        </li>
+        <li>
+          BUENA PRACTICA , USER SCALABLE="YES", MINIMUM-SCALE=1.0"> todo va en
+          minusculas
+        </li>
+      </ul>
+      <a
+        href="https://css-tricks.com/snippets/html/responsive-meta-tag/"
+        target="_blank"
+        >Enlace a la información</a
+      >
+    </main>
+  </body>
+</html>

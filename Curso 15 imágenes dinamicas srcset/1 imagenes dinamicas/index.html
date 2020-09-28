@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imágenes dinamicas</title>
+    <link href="tipo de fuente" />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <header>h1</header>
+    <nav></nav>
+    <main>
+      <h1>imágenes dinamicas</h1>
+      <!-- imágenes  -->
+      <!-- si sólo queremos cargar una imágen para todos los dispositivos -->
+      <img src="ruta" alt="descripción" />
+
+      <!-- si queremos cargar distintas imágenes según el dispositivo usaremos el atributo srcset -->
+      <img src="" alt="" srcset="ruta de las imágenes" />
+
+      <!-- Device pixel ratio -->
+      <!-- Es la relación de aspecto entre los pixeles de la web y los pixeles reales -->
+      <!-- hay dos tipos de pixeles -->
+
+      <!-- un pixel fisico es uno de los miles de puntos (hardware) que forman la pantalla de un dispositivo -->
+      <!-- pixel lógico no tiene dimensiones especificas, sino que están establecidas por (software) -->
+
+      <!-- En un dispositivo con device pixel ratio 1, un pixel lógico ocupará un pixel fisico.-->
+
+      <!-- En un dispositivo móvil  contiene un  device pixel ratio 2,3,4, o 5 dependiendo el dispositivo  un pixel lógico ocupará un área de la pantalla de nxn pixeles fisicos -->
+
+      <!-- estandar en dispositivos móviles -->
+
+      <!-- En el desarrollo web la resolución  es calculada por CSS, y existe el CSS pixel ratio, que se creó por la resolución de los dispositivos móviles -->
+      <!-- si en el dispositivo móvil se hace zoom se tendrá menos pixeles, el tamaño también va a disminuir -->
+
+      <!-- página para calcular el pixel ratio -->
+      <!-- se de  cambiar el nombre de la imágen y ponerla asi
+        desktop-nombre de la imágen.png o jpg
+        mobile-nombre de la imágen.png o jpg -->
+      <!-- no olvidar la coma , para separar la imágen -->
+
+      <!-- ejemplo -->
+      <!-- 1x, 2x, es para determinar el tamaño de la imágen dependiendo del dispositivo, el navegador solo va a descargar la que se necesita imágen grande para pc, imágen mediana o pequeña para celular -->
+
+      <!-- sino se quiere poner 1x, 2x, se puede especificar el ancho de la imágen -->
+      <!-- es decir desktop-image.png 1024w, es decir tiene 1024 pixeles de ancho-->
+      <!-- mobile-image.png 768w -->
+      <!-- si el viewport es más de 1000, carga la de 1024w
+      si el viewport es menor de 1024, carga la imágen 768w  -->
+
+      <!-- atributo sizes "por defecto da un 100% del viewport" NO SE RECOMIENDA USAR SIZES-->
+
+      <style>
+        img {
+          display: block;
+          width: 75vw;
+        }
+      </style>
+
+      <img
+        src=""
+        alt="Flor"
+        srcset="desktop-image.jpg 1024w, mobile-image.jpg 768w"
+      />
+    </main>
+  </body>
+</html>
